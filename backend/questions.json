@@ -1,0 +1,1227 @@
+[
+  {
+    "id": 1,
+    "question": "If the sum of two numbers is 27 and one of them is 12, what is the other number?",
+    "options": ["13", "15", "27", "39"],
+    "answer": "15"
+  },
+  {
+    "id": 2,
+    "question": "Solve for x in the equation: 4(2x - 1) = 14.",
+    "options": ["1", "2", "3", "4"],
+    "answer": "2"
+  },
+  {
+    "id": 3,
+    "question": "Calculate the area of a rectangle whose length is twice its width and its perimeter is 24 units.",
+    "options": ["24", "32", "36", "40"],
+    "answer": "32"
+  },
+  {
+    "id": 4,
+    "question": "If 9 multiplied by a certain number equals 54, what is the number?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6"
+  },
+  {
+    "id": 5,
+    "question": "A square's perimeter is increased by 20%, what is the percentage increase in its area?",
+    "options": ["20%", "40%", "44%", "44.5%"],
+    "answer": "44%"
+  },
+  {
+    "id": 6,
+    "question": "Find 15% of 200 and then subtract 10% of the result.",
+    "options": ["27", "28", "30", "31.5"],
+    "answer": "27"
+  },
+  {
+    "id": 7,
+    "question": "Given 3y - 4 = 11, solve for y and then find y squared.",
+    "options": ["25", "30", "35", "49"],
+    "answer": "25"
+  },
+  {
+    "id": 8,
+    "question": "Find the positive square root of 81 and then add 10.",
+    "options": ["17", "18", "19", "20"],
+    "answer": "19"
+  },
+  {
+    "id": 9,
+    "question": "Using π ≈ 3.14, calculate the circumference of a circle with a diameter of 10 units.",
+    "options": ["31.4", "30", "28", "32.4"],
+    "answer": "31.4"
+  },
+  {
+    "id": 10,
+    "question": "An angle is one-third of a right angle. How many degrees is that angle?",
+    "options": ["30", "35", "40", "45"],
+    "answer": "30"
+  },
+  {
+    "id": 11,
+    "question": "Calculate 7 squared minus 7 times 2.",
+    "options": ["35", "42", "49", "56"],
+    "answer": "35"
+  },
+  {
+    "id": 12,
+    "question": "If 100 divided by 4 is 25, what is 100 divided by 0.25?",
+    "options": ["25", "250", "400", "4000"],
+    "answer": "400"
+  },
+  {
+    "id": 13,
+    "question": "Solve for x if 5x + 3 = 38.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7"
+  },
+  {
+    "id": 14,
+    "question": "Find the next number in the sequence: 2, 4, 8, 16, 32, __.",
+    "options": ["48", "54", "64", "72"],
+    "answer": "64"
+  },
+  {
+    "id": 15,
+    "question": "The sum of internal angles in any polygon with n sides is (n-2)×180°. What is the sum for a triangle?",
+    "options": ["90°", "180°", "270°", "360°"],
+    "answer": "180°"
+  },
+  {
+    "id": 16,
+    "question": "If 3 apples cost $6, and the cost per apple increases by 50%, what will be the new total cost for 3 apples?",
+    "options": ["$6", "$7.5", "$9", "$12"],
+    "answer": "$9"
+  },
+  {
+    "id": 17,
+    "question": "What is the square of the product of 11 and 1?",
+    "options": ["11", "121", "1210", "1331"],
+    "answer": "121"
+  },
+  {
+    "id": 18,
+    "question": "Subtract 19 from 45 and then multiply the result by 2.",
+    "options": ["48", "52", "54", "56"],
+    "answer": "52"
+  },
+  {
+    "id": 19,
+    "question": "How many diagonals does a hexagon have? (Hint: Number of diagonals = n(n - 3)/2 where n is the number of sides)",
+    "options": ["6", "9", "12", "15"],
+    "answer": "9"
+  },
+  {
+    "id": 20,
+    "question": "Express 0.75 as a fraction in simplest form and multiply it by 8.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "6"
+  },
+  {
+    "id": 21,
+    "question": "Which markup language is primarily responsible for the structure and content of web pages?",
+    "options": ["Python", "HTML", "Java", "C++"],
+    "answer": "HTML"
+  },
+  {
+    "id": 22,
+    "question": "What component in a computer interprets and executes instructions?",
+    "options": ["RAM", "CPU", "GPU", "Hard Drive"],
+    "answer": "CPU"
+  },
+  {
+    "id": 23,
+    "question": "Which type of memory is volatile and loses its content when the power is off?",
+    "options": ["ROM", "Hard Drive", "RAM", "Cache"],
+    "answer": "RAM"
+  },
+  {
+    "id": 24,
+    "question": "Which input device allows a user to enter textual data into a computer?",
+    "options": ["Monitor", "Keyboard", "Printer", "Speaker"],
+    "answer": "Keyboard"
+  },
+  {
+    "id": 25,
+    "question": "What does the protocol HTTP primarily manage in computing?",
+    "options": ["File storage", "Data encryption", "Web communication", "Database management"],
+    "answer": "Web communication"
+  },
+  {
+    "id": 26,
+    "question": "What is the primary role of a hard drive in a computer system?",
+    "options": ["Store data persistently", "Process instructions", "Manage network traffic", "Control input/output devices"],
+    "answer": "Store data persistently"
+  },
+  {
+    "id": 27,
+    "question": "Which technology company developed the Windows operating system?",
+    "options": ["Apple", "Microsoft", "Google", "IBM"],
+    "answer": "Microsoft"
+  },
+  {
+    "id": 28,
+    "question": "What does URL stand for and what is its purpose?",
+    "options": [
+      "Uniform Resource Locator, identifies web addresses",
+      "Universal Resource Locator, manages file storage",
+      "Uniform Reference Locator, controls network access",
+      "Universal Reference Locator, used in programming"
+    ],
+    "answer": "Uniform Resource Locator, identifies web addresses"
+  },
+  {
+    "id": 29,
+    "question": "Among these, which device is used primarily to navigate the cursor on a computer screen?",
+    "options": ["Mouse", "Speaker", "Monitor", "Printer"],
+    "answer": "Mouse"
+  },
+  {
+    "id": 30,
+    "question": "In most operating systems, which keyboard shortcut is used to copy selected items to the clipboard?",
+    "options": ["Ctrl + C", "Ctrl + V", "Ctrl + X", "Ctrl + Z"],
+    "answer": "Ctrl + C"
+  },
+  {
+    "id": 31,
+    "question": "What is software in a computing context, and how does it differ from hardware?",
+    "options": [
+      "Physical parts of a computer; hardware is intangible",
+      "Programs and applications; hardware is physical components",
+      "Computer language; hardware is coding syntax",
+      "Computer hardware; software is input devices"
+    ],
+    "answer": "Programs and applications; hardware is physical components"
+  },
+  {
+    "id": 32,
+    "question": "Which of these is NOT an operating system, and why?",
+    "options": ["Linux", "Windows", "Android", "Google"],
+    "answer": "Google — because it is a company, not an OS"
+  },
+  {
+    "id": 33,
+    "question": "Identify the main circuit board inside a computer and describe its function.",
+    "options": ["CPU", "RAM", "Motherboard", "Hard drive"],
+    "answer": "Motherboard — it connects all components and allows communication"
+  },
+  {
+    "id": 34,
+    "question": "What is the primary use of a web browser?",
+    "options": ["Editing images", "Playing games", "Accessing the internet", "Listening to music"],
+    "answer": "Accessing the internet"
+  },
+  {
+    "id": 35,
+    "question": "Microsoft Word is an example of which software category and what is its main purpose?",
+    "options": ["Spreadsheet", "Word processor", "Database", "Operating system"],
+    "answer": "Word processor — used for creating and editing text documents"
+  },
+  {
+    "id": 36,
+    "question": "Convert the decimal number 5 into binary notation.",
+    "options": ["101", "110", "111", "100"],
+    "answer": "101"
+  },
+  {
+    "id": 37,
+    "question": "Among the following, which one is a programming language used to create interactive web content?",
+    "options": ["HTML", "CSS", "JavaScript", "HTTP"],
+    "answer": "JavaScript"
+  },
+  {
+    "id": 38,
+    "question": "What does GUI stand for, and what does it enable users to do?",
+    "options": [
+      "Graphical User Interface — allows interaction via graphics",
+      "General User Internet — connects users online",
+      "Graphical Universal Interface — standardizes graphics",
+      "General User Interface — controls user input"
+    ],
+    "answer": "Graphical User Interface — allows interaction via graphics"
+  },
+  {
+    "id": 39,
+    "question": "Which device displays visual output from a computer to the user?",
+    "options": ["Monitor", "Keyboard", "Mouse", "Printer"],
+    "answer": "Monitor"
+  },
+  {
+    "id": 40,
+    "question": "What does USB stand for, and what is its purpose in computing?",
+    "options": [
+      "Universal Serial Bus — standard for data transfer and power",
+      "Universal System Bus — internal computer bus",
+      "United Serial Bus — network connection type",
+      "Universal Service Bus — software communication"
+    ],
+    "answer": "Universal Serial Bus — standard for data transfer and power"
+  },
+  {
+    "id": 41,
+    "question": "At what temperature (in Celsius) does water boil at standard atmospheric pressure?",
+    "options": ["90°C", "100°C", "110°C", "120°C"],
+    "answer": "100°C"
+  },
+  {
+    "id": 42,
+    "question": "What is the chemical symbol for the element Oxygen?",
+    "options": ["O", "Ox", "Og", "On"],
+    "answer": "O"
+  },
+  {
+    "id": 43,
+    "question": "Which planet in our solar system is known as the Red Planet, and why?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "answer": "Mars — due to iron oxide (rust) on its surface giving a reddish appearance"
+  },
+  {
+    "id": 44,
+    "question": "Which gas is absorbed by plants during photosynthesis?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "answer": "Carbon Dioxide"
+  },
+  {
+    "id": 45,
+    "question": "What is the name of the central part of an atom, containing protons and neutrons?",
+    "options": ["Electron", "Proton", "Nucleus", "Neutron"],
+    "answer": "Nucleus"
+  },
+  {
+    "id": 46,
+    "question": "Which force is responsible for pulling objects toward the Earth’s surface?",
+    "options": ["Magnetism", "Gravity", "Friction", "Electricity"],
+    "answer": "Gravity"
+  },
+  {
+    "id": 47,
+    "question": "Which type of blood cells play a key role in the immune system by fighting infections?",
+    "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
+    "answer": "White blood cells"
+  },
+  {
+    "id": 48,
+    "question": "What is the common chemical name for H2O?",
+    "options": ["Hydrogen", "Oxygen", "Water", "Salt"],
+    "answer": "Water"
+  },
+  {
+    "id": 49,
+    "question": "What is the process called when liquid water turns into vapor?",
+    "options": ["Condensation", "Evaporation", "Precipitation", "Sublimation"],
+    "answer": "Evaporation"
+  },
+  {
+    "id": 50,
+    "question": "Which organ in the human body is responsible for pumping blood throughout the circulatory system?",
+    "options": ["Lungs", "Heart", "Liver", "Kidneys"],
+    "answer": "Heart"
+  },
+  {
+    "id": 51,
+    "question": "What is the primary gas composing Earth's atmosphere, and approximately what percentage does it constitute?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Helium"],
+    "answer": "Nitrogen",
+    "explanation": "Nitrogen makes up about 78% of Earth's atmosphere."
+  },
+  {
+    "id": 52,
+    "question": "Which part of a plant is primarily responsible for conducting photosynthesis?",
+    "options": ["Root", "Stem", "Leaf", "Flower"],
+    "answer": "Leaf",
+    "explanation": "Leaves contain chlorophyll, which captures sunlight for photosynthesis."
+  },
+  {
+    "id": 53,
+    "question": "What type of energy is emitted by the sun and powers most life on Earth?",
+    "options": ["Chemical", "Nuclear", "Solar", "Electrical"],
+    "answer": "Solar",
+    "explanation": "Solar energy is radiant energy from the sun."
+  },
+  {
+    "id": 54,
+    "question": "What defines a simple machine, and which of the following is an example?",
+    "options": [
+      "Device that changes energy",
+      "Device that changes force",
+      "Device that stores energy",
+      "Device that measures energy"
+    ],
+    "answer": "Device that changes force",
+    "explanation": "Simple machines, like levers, modify force to perform work more easily."
+  },
+  {
+    "id": 55,
+    "question": "Which type of scientist specializes in the study of living organisms?",
+    "options": ["Physicist", "Chemist", "Biologist", "Geologist"],
+    "answer": "Biologist",
+    "explanation": "Biologists study plants, animals, and other life forms."
+  },
+  {
+    "id": 56,
+    "question": "What is the freezing point of water on the Celsius scale?",
+    "options": ["0°C", "-5°C", "32°C", "100°C"],
+    "answer": "0°C",
+    "explanation": "Water freezes at 0 degrees Celsius under standard conditions."
+  },
+  {
+    "id": 57,
+    "question": "Which chemical element has the symbol 'Na' and what common substance does it represent?",
+    "options": ["Nitrogen", "Sodium", "Neon", "Nickel"],
+    "answer": "Sodium",
+    "explanation": "'Na' stands for Sodium, a reactive metal found in table salt."
+  },
+  {
+    "id": 58,
+    "question": "Which human organ is primarily responsible for digestion of food?",
+    "options": ["Heart", "Liver", "Stomach", "Lungs"],
+    "answer": "Stomach",
+    "explanation": "The stomach breaks down food using acids and enzymes."
+  },
+  {
+    "id": 59,
+    "question": "Identify which of these is NOT a state of matter.",
+    "options": ["Solid", "Liquid", "Gas", "Light"],
+    "answer": "Light",
+    "explanation": "Light is energy, not a physical state of matter."
+  },
+  {
+    "id": 60,
+    "question": "What is the largest planet in our solar system?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "answer": "Jupiter",
+    "explanation": "Jupiter is the largest planet by mass and volume."
+  },
+  {
+    "id": 61,
+    "question": "Find the odd one out: Cat, Dog, Car, Bird",
+    "options": ["Cat", "Dog", "Car", "Bird"],
+    "answer": "Car",
+    "explanation": "Car is a vehicle; the others are animals."
+  },
+  {
+    "id": 62,
+    "question": "If all Bloops are Razzies, and all Razzies are Lazzies, are all Bloops definitely Lazzies?",
+    "options": ["Yes", "No", "Cannot say", "Only some"],
+    "answer": "Yes",
+    "explanation": "This is a classic transitive logic; Bloops inherit the property of Lazzies."
+  },
+  {
+    "id": 63,
+    "question": "What comes next in the sequence? 5, 10, 20, 40, __",
+    "options": ["45", "60", "80", "100"],
+    "answer": "80",
+    "explanation": "The sequence doubles each time."
+  },
+  {
+    "id": 64,
+    "question": "How many triangles are there in a larger triangle subdivided into 4 smaller triangles?",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4",
+    "explanation": "The large triangle is divided into 4 distinct smaller triangles."
+  },
+  {
+    "id": 65,
+    "question": "Complete the analogy: 2 is to 4 as 3 is to __",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6",
+    "explanation": "Each number is multiplied by 2."
+  },
+  {
+    "id": 66,
+    "question": "If you rearrange the letters 'CIFAIPC', what word do you get?",
+    "options": ["Ocean", "Country", "City", "Animal"],
+    "answer": "Pacific (Ocean)",
+    "explanation": "The letters are an anagram for 'Pacific'."
+  },
+  {
+    "id": 67,
+    "question": "Which geometric shape has exactly three sides?",
+    "options": ["Square", "Triangle", "Circle", "Rectangle"],
+    "answer": "Triangle",
+    "explanation": "Triangles have three sides."
+  },
+  {
+    "id": 68,
+    "question": "What is the missing number in the sequence? 3, 6, 9, __, 15",
+    "options": ["10", "11", "12", "13"],
+    "answer": "12",
+    "explanation": "The sequence increases by 3 each step."
+  },
+  {
+    "id": 69,
+    "question": "Complete the pattern: 1, 1, 2, 3, 5, 8, __",
+    "options": ["10", "11", "12", "13"],
+    "answer": "13",
+    "explanation": "This is the Fibonacci sequence where each number is the sum of the two previous."
+  },
+  {
+    "id": 70,
+    "question": "I am an odd number. Take away one letter, and I become even. What number am I?",
+    "options": ["Seven", "Eleven", "Five", "Nine"],
+    "answer": "Seven",
+    "explanation": "'Seven' minus the letter 's' becomes 'even'."
+  },
+  {
+    "id": 71,
+    "question": "Which one does not belong: Apple, Banana, Carrot, Grape",
+    "options": ["Apple", "Banana", "Carrot", "Grape"],
+    "answer": "Carrot",
+    "explanation": "Carrot is a root vegetable; the others are fruits."
+  },
+  {
+    "id": 72,
+    "question": "How many hours are there in two days?",
+    "options": ["24", "36", "48", "60"],
+    "answer": "48",
+    "explanation": "1 day = 24 hours; 2 days = 48 hours."
+  },
+  {
+    "id": 73,
+    "question": "What comes next in the sequence: 2, 4, 8, 16, __",
+    "options": ["18", "24", "32", "36"],
+    "answer": "32",
+    "explanation": "Sequence doubles each time."
+  },
+  {
+    "id": 74,
+    "question": "If a train travels 60 miles in 1 hour, how far will it travel in 3 hours?",
+    "options": ["120", "150", "180", "200"],
+    "answer": "180",
+    "explanation": "Distance = speed × time, so 60 × 3 = 180 miles."
+  },
+  {
+    "id": 75,
+    "question": "If you have 3 pairs of shoes, how many individual shoes do you have?",
+    "options": ["3", "6", "9", "12"],
+    "answer": "6",
+    "explanation": "Each pair has 2 shoes; 3 pairs × 2 = 6 shoes."
+  },
+  {
+    "id": 76,
+    "question": "What is the next number in the sequence: 10, 20, 30, __, 50",
+    "options": ["35", "40", "45", "48"],
+    "answer": "40",
+    "explanation": "Sequence increases by 10 each time."
+  },
+  {
+    "id": 77,
+    "question": "If all roses are flowers, and some flowers fade quickly, do some roses fade quickly?",
+    "options": ["Yes", "No", "Cannot say", "Only some"],
+    "answer": "Cannot say",
+    "explanation": "It’s unknown if the 'some flowers' that fade include roses."
+  },
+  {
+    "id": 78,
+    "question": "What is the smallest prime number?",
+    "options": ["0", "1", "2", "3"],
+    "answer": "2",
+    "explanation": "2 is the smallest and only even prime number."
+  },
+  {
+    "id": 79,
+    "question": "Which number is missing? 1, 4, 9, 16, __",
+    "options": ["20", "23", "25", "27"],
+    "answer": "25",
+    "explanation": "These are perfect squares: 1², 2², 3², 4², 5²."
+  },
+  {
+    "id": 80,
+    "question": "If a rectangle has length 10 and width 2, what is its area?",
+    "options": ["12", "20", "22", "24"],
+    "answer": "20",
+    "explanation": "Area = length × width = 10 × 2 = 20."
+  },
+  {
+    "id": 81,
+    "question": "Choose the word opposite in meaning to 'Generous'.",
+    "options": ["Selfish", "Kind", "Brave", "Happy"],
+    "answer": "Selfish",
+    "explanation": "'Selfish' means not generous."
+  },
+  {
+    "id": 82,
+    "question": "Which is a synonym for 'Quick'?",
+    "options": ["Slow", "Fast", "Lazy", "Weak"],
+    "answer": "Fast",
+    "explanation": "'Fast' means quick."
+  },
+  {
+    "id": 83,
+    "question": "Fill in the blank: She is as _____ as a fox.",
+    "options": ["Smart", "Brave", "Foolish", "Slow"],
+    "answer": "Smart",
+    "explanation": "Foxes are often symbols of cleverness."
+  },
+  {
+    "id": 84,
+    "question": "Choose the correct word: Their, There, or They're: _____ going to the market.",
+    "options": ["Their", "There", "They're"],
+    "answer": "They're",
+    "explanation": "'They're' is the contraction of 'they are'."
+  },
+  {
+    "id": 85,
+    "question": "What is the opposite of 'Increase'?",
+    "options": ["Decrease", "Grow", "Add", "Expand"],
+    "answer": "Decrease",
+    "explanation": "'Decrease' means to become smaller."
+  },
+  {
+    "id": 86,
+    "question": "Complete the sentence: The cat ____ on the mat.",
+    "options": ["Sit", "Sits", "Sitting", "Sat"],
+    "answer": "Sits",
+    "explanation": "Simple present tense requires 's' for third person singular."
+  },
+  {
+    "id": 87,
+    "question": "Choose the synonym of 'Happy'.",
+    "options": ["Sad", "Glad", "Angry", "Tired"],
+    "answer": "Glad",
+    "explanation": "'Glad' means happy or pleased."
+  },
+  {
+    "id": 88,
+    "question": "Find the odd one out: Run, Walk, Jump, Red",
+    "options": ["Run", "Walk", "Jump", "Red"],
+    "answer": "Red",
+    "explanation": "Red is a color; the others are actions."
+  },
+  {
+    "id": 89,
+    "question": "Which word is a noun?",
+    "options": ["Run", "Happy", "Apple", "Quick"],
+    "answer": "Apple",
+    "explanation": "'Apple' is a thing, a noun."
+  },
+  {
+    "id": 90,
+    "question": "Choose the correct form: She ____ to school every day.",
+    "options": ["Go", "Goes", "Gone", "Going"],
+    "answer": "Goes",
+    "explanation": "Third person singular present requires 'goes'."
+  },
+  {
+    "id": 91,
+    "question": "What is the plural of 'Mouse'?",
+    "options": ["Mouses", "Mices", "Mice", "Mouse"],
+    "answer": "Mice",
+    "explanation": "'Mice' is the correct irregular plural."
+  },
+  {
+    "id": 92,
+    "question": "Fill in the blank: He has ____ car.",
+    "options": ["A", "An", "The", "No article"],
+    "answer": "A",
+    "explanation": "'A' is used before consonant sounds."
+  },
+  {
+    "id": 93,
+    "question": "What is the opposite of 'Empty'?",
+    "options": ["Full", "Heavy", "Light", "Open"],
+    "answer": "Full",
+    "explanation": "'Full' means not empty."
+  },
+  {
+    "id": 94,
+    "question": "Choose the correct word: I _____ a book yesterday.",
+    "options": ["Read", "Red", "Rode", "Ride"],
+    "answer": "Read",
+    "explanation": "'Read' (pronounced 'red') is the past tense."
+  },
+  {
+    "id": 95,
+    "question": "Which word means 'to look quickly'?",
+    "options": ["Glance", "Stare", "Gaze", "Peek"],
+    "answer": "Glance",
+    "explanation": "'Glance' means a quick look."
+  },
+  {
+    "id": 96,
+    "question": "What is the adjective in this sentence: The quick fox jumps.",
+    "options": ["Quick", "Fox", "Jumps", "The"],
+    "answer": "Quick",
+    "explanation": "'Quick' describes the fox."
+  },
+  {
+    "id": 97,
+    "question": "Choose the correct word: He is taller ____ me.",
+    "options": ["Than", "Then", "When", "That"],
+    "answer": "Than",
+    "explanation": "'Than' is used for comparisons."
+  },
+  {
+    "id": 98,
+    "question": "Find the synonym of 'Begin'.",
+    "options": ["Start", "End", "Stop", "Finish"],
+    "answer": "Start",
+    "explanation": "'Start' means to begin."
+  },
+  {
+    "id": 99,
+    "question": "Complete the analogy: Hot is to Cold as Up is to ___.",
+    "options": ["Down", "Left", "Right", "Forward"],
+    "answer": "Down",
+    "explanation": "Hot and cold, up and down are opposites."
+  },
+  {
+    "id": 100,
+    "question": "Solve the riddle: I speak without a mouth and hear without ears. What am I?",
+    "options": ["Echo", "Shadow", "Wind", "Light"],
+    "answer": "Echo",
+    "explanation": "An echo repeats sound without a mouth or ears."
+  },
+  {
+    "id": 101,
+    "question": "A customer calls in extremely upset about a double charge on their credit card. What should you do first?",
+    "options": [
+      "Apologize for the inconvenience and assure them you’ll investigate the issue right away.",
+      "Ask them to calm down and explain what happened.",
+      "Suggest they contact their bank before calling again.",
+      "Tell them it’s probably just a glitch and not to worry about it."
+    ],
+    "answer": "Apologize for the inconvenience and assure them you’ll investigate the issue right away."
+  },
+  {
+    "id": 102,
+    "question": "You don’t know the answer to a technical question a customer just asked. What should you do?",
+    "options": [
+      "Admit you’re not sure, but offer to find out or escalate the issue.",
+      "Guess based on what sounds right to keep the customer moving.",
+      "Refer them to the website without further assistance.",
+      "Tell them you’ll check with the team and follow up later."
+    ],
+    "answer": "Admit you’re not sure, but offer to find out or escalate the issue."
+  },
+  {
+    "id": 103,
+    "question": "A customer says their problem was not resolved after speaking with your colleague. How do you respond?",
+    "options": [
+      "Apologize, review the case notes, and take ownership of resolving the issue.",
+      "Tell them you can't override your colleague’s decision.",
+      "Ask them to call back when your supervisor is available.",
+      "Let them explain again and check if any steps were missed."
+    ],
+    "answer": "Apologize, review the case notes, and take ownership of resolving the issue."
+  },
+  {
+    "id":104,
+    "question": "You receive three chat requests while finishing a phone call. What do you do?",
+    "options": [
+      "Finish the current call, then handle chats in order of urgency.",
+      "Ignore the chats until your current task is done.",
+      "Try to multitask across all channels immediately.",
+      "Inform your team or set your chat status to unavailable temporarily."
+    ],
+    "answer": "Finish the current call, then handle chats in order of urgency."
+  },
+  {
+    "id":105,
+    "question": "A customer begins using offensive language during the call. How should you respond?",
+    "options": [
+      "Calmly warn the customer that abusive language won’t be tolerated.",
+      "Hang up immediately.",
+      "Ignore it and continue with the conversation.",
+      "Ask if they’d like to speak to someone else instead."
+    ],
+    "answer": "Calmly warn the customer that abusive language won’t be tolerated."
+  },
+  {
+    "id": 106,
+    "question": "A customer says they have been waiting for a refund for 3 weeks. What do you do?",
+    "options": [
+      "Apologize and check the refund status immediately.",
+      "Tell them refunds take time and ask them to wait longer.",
+      "Explain the refund policy in detail without checking the status.",
+      "Ignore their frustration and proceed with other tasks."
+    ],
+    "answer": "Apologize and check the refund status immediately."
+  },
+  {
+    "id": 107,
+    "question": "How do you handle a customer who is not satisfied with your solution?",
+    "options": [
+      "Listen carefully and offer to escalate the issue if needed.",
+      "Insist that your solution is the best and final.",
+      "Ignore their dissatisfaction and close the case.",
+      "Tell them to try again later."
+    ],
+    "answer": "Listen carefully and offer to escalate the issue if needed."
+  },
+  {
+    "id":108,
+    "question": "What would you do if a system outage affects many customers?",
+    "options": [
+      "Notify customers proactively and provide regular updates.",
+      "Wait for customers to complain before acting.",
+      "Tell customers the issue is not your responsibility.",
+      "Ignore the issue until it’s fixed."
+    ],
+    "answer": "Notify customers proactively and provide regular updates."
+  },
+  {
+    "id": 109,
+    "question": "How do you ensure you understand a customer's issue correctly?",
+    "options": [
+      "Repeat back what they said and ask for confirmation.",
+      "Assume what they mean based on experience.",
+      "Skip questions to save time.",
+      "Give a solution before fully understanding."
+    ],
+    "answer": "Repeat back what they said and ask for confirmation."
+  },
+  {
+    "id": 110,
+    "question": "A customer wants a refund but your policy says no refunds. What do you do?",
+    "options": [
+      "Explain the policy politely and offer alternative solutions.",
+      "Refuse immediately and end the call.",
+      "Ignore their request.",
+      "Tell them to complain to management."
+    ],
+    "answer": "Explain the policy politely and offer alternative solutions."
+  },
+  {
+    "id": 111,
+    "question": "If you notice a mistake in your colleague’s work that affects a customer, what do you do?",
+    "options": [
+      "Inform your colleague and help fix the mistake.",
+      "Ignore it since it’s not your responsibility.",
+      "Blame the colleague in front of the customer.",
+      "Do nothing and hope it resolves itself."
+    ],
+    "answer": "Inform your colleague and help fix the mistake."
+  },
+  {
+    "id": 112,
+    "question": "How do you prioritize tasks when multiple customers need assistance simultaneously?",
+    "options": [
+      "Prioritize based on urgency and impact on customers.",
+      "Help the easiest ones first to clear your queue.",
+      "Ignore all and take a break.",
+      "Help whoever shouts the loudest."
+    ],
+    "answer": "Prioritize based on urgency and impact on customers."
+  },
+  {
+    "id": 113,
+    "question": "What is your approach when handling a customer complaint you disagree with?",
+    "options": [
+      "Listen patiently and address their concerns respectfully.",
+      "Tell them they are wrong.",
+      "Ignore the complaint.",
+      "Argue to prove your point."
+    ],
+    "answer": "Listen patiently and address their concerns respectfully."
+  },
+  {
+    "id": 114,
+    "question": "A customer is confused about your company’s billing process. How do you help?",
+    "options": [
+      "Explain the billing process clearly using simple terms.",
+      "Tell them to read the website FAQ.",
+      "Ignore the question.",
+      "Refer them to another department."
+    ],
+    "answer": "Explain the billing process clearly using simple terms."
+  },
+  {
+    "id": 115,
+    "question": "How do you handle confidential customer information?",
+    "options": [
+      "Follow company policies strictly and keep information secure.",
+      "Share with colleagues casually.",
+      "Discuss with friends outside work.",
+      "Ignore privacy concerns."
+    ],
+    "answer": "Follow company policies strictly and keep information secure."
+  },
+  {
+    "id": 116,
+    "question": "If you receive negative feedback from a customer, what is your reaction?",
+    "options": [
+      "Thank them and look for ways to improve.",
+      "Get defensive and argue.",
+      "Ignore the feedback.",
+      "Blame the customer."
+    ],
+    "answer": "Thank them and look for ways to improve."
+  },
+  {
+    "id": 117,
+    "question": "A customer asks for a feature that your product doesn’t support. How do you respond?",
+    "options": [
+      "Explain honestly and suggest possible alternatives.",
+      "Promise the feature without checking.",
+      "Ignore the request.",
+      "Tell them it’s impossible."
+    ],
+    "answer": "Explain honestly and suggest possible alternatives."
+  },
+  {
+    "id": 118,
+    "question": "How do you stay calm during a stressful day with many angry customers?",
+    "options": [
+      "Take deep breaths and focus on helping each customer individually.",
+      "Take out frustrations on customers.",
+      "Ignore stress and hope it passes.",
+      "Leave work early."
+    ],
+    "answer": "Take deep breaths and focus on helping each customer individually."
+  },
+  {
+    "id": 119,
+    "question": "What is your method for learning new product updates?",
+    "options": [
+      "Attend trainings and review materials regularly.",
+      "Ignore updates until asked.",
+      "Rely on colleagues to explain.",
+      "Guess based on old knowledge."
+    ],
+    "answer": "Attend trainings and review materials regularly."
+  },
+  {
+    "id": 120,
+    "question": "How do you handle a customer who refuses to follow instructions?",
+    "options": [
+      "Stay patient and try different explanations.",
+      "Get frustrated and hang up.",
+      "Ignore their refusal.",
+      "Tell them to leave."
+    ],
+    "answer": "Stay patient and try different explanations."
+  },
+  {
+    "id": 121,
+    "question": "A customer asks you to fix a problem that is out of your control. What do you do?",
+    "options": [
+      "Explain the situation and escalate to the appropriate team.",
+      "Pretend you can fix it.",
+      "Ignore the problem.",
+      "Tell the customer it's their fault."
+    ],
+    "answer": "Explain the situation and escalate to the appropriate team."
+  },
+  {
+    "id": 122,
+    "question": "How do you document customer interactions?",
+    "options": [
+      "Record accurate notes promptly after each interaction.",
+      "Forget to document and rely on memory.",
+      "Document only when convenient.",
+      "Ask others to document for you."
+    ],
+    "answer": "Record accurate notes promptly after each interaction."
+  },
+  {
+    "id": 123,
+    "question": "A customer thanks you for your help. How do you respond?",
+    "options": [
+      "Thank them politely and offer further assistance.",
+      "Ignore their thanks.",
+      "Tell them it was your job.",
+      "End the conversation abruptly."
+    ],
+    "answer": "Thank them politely and offer further assistance."
+  },
+  {
+    "id": 124,
+    "question": "If you notice a security issue affecting customers, what do you do?",
+    "options": [
+      "Report immediately to the security team and follow protocols.",
+      "Ignore it if it’s minor.",
+      "Tell customers yourself without informing anyone.",
+      "Try to fix it yourself without informing."
+    ],
+    "answer": "Report immediately to the security team and follow protocols."
+  },
+  {
+    "id": 125,
+    "question": "What do you do when you receive unclear information from a customer?",
+    "options": [
+      "Ask clarifying questions to better understand.",
+      "Make assumptions and proceed.",
+      "Ignore and close the case.",
+      "Refer them to another department without clarifying."
+    ],
+    "answer": "Ask clarifying questions to better understand."
+  },
+  {
+    "id": 126,
+    "question": "How would you handle a technical failure during a live customer call?",
+    "options": [
+      "Apologize and offer alternative communication or call back.",
+      "Ignore and continue talking.",
+      "Blame the customer’s equipment.",
+      "Hang up immediately."
+    ],
+    "answer": "Apologize and offer alternative communication or call back."
+  },
+  {
+    "id": 127,
+    "question": "What is the best way to handle repetitive tasks?",
+    "options": [
+      "Stay focused and look for ways to improve efficiency.",
+      "Get bored and make mistakes.",
+      "Ignore and rush through.",
+      "Complain to management constantly."
+    ],
+    "answer": "Stay focused and look for ways to improve efficiency."
+  },
+  {
+    "id": 128,
+    "question": "How do you handle situations when a customer asks a question not related to your product?",
+    "options": [
+      "Politely explain and direct them to the appropriate source.",
+      "Ignore their question.",
+      "Provide false information.",
+      "Tell them to find out themselves."
+    ],
+    "answer": "Politely explain and direct them to the appropriate source."
+  },
+  {
+    "id": 129,
+    "question": "How would you manage your time during a busy shift?",
+    "options": [
+      "Prioritize tasks and take short breaks to maintain energy.",
+      "Work as fast as possible without breaks.",
+      "Ignore tasks and chat with coworkers.",
+      "Leave tasks unfinished to save time."
+    ],
+    "answer": "Prioritize tasks and take short breaks to maintain energy."
+  },
+  {
+    "id": 130,
+    "question": "If a customer insists on speaking to your supervisor, what do you do?",
+    "options": [
+      "Politely escalate the call or provide supervisor contact.",
+      "Refuse to transfer.",
+      "Ignore the request.",
+      "Tell the customer they are wrong."
+    ],
+    "answer": "Politely escalate the call or provide supervisor contact."
+  },
+  {
+    "id": 131,
+    "question": "What should you do if a customer provides incomplete information about their issue?",
+    "options": [
+      "Politely ask for the missing details to better assist them.",
+      "Make assumptions to speed up the process.",
+      "Tell them you cannot help without full info.",
+      "Ignore the missing info and proceed."
+    ],
+    "answer": "Politely ask for the missing details to better assist them."
+  },
+  {
+    "id": 132,
+    "question": "A customer asks for a discount that is not authorized. How do you respond?",
+    "options": [
+      "Explain company policies and offer other possible benefits.",
+      "Give the discount anyway.",
+      "Ignore their request.",
+      "Tell them to take it or leave it."
+    ],
+    "answer": "Explain company policies and offer other possible benefits."
+  },
+  {
+    "id": 133,
+    "question": "How do you handle a situation where you accidentally gave incorrect information?",
+    "options": [
+      "Apologize sincerely and provide the correct details promptly.",
+      "Ignore it and hope the customer doesn't notice.",
+      "Blame the system.",
+      "Tell the customer they misunderstood."
+    ],
+    "answer": "Apologize sincerely and provide the correct details promptly."
+  },
+  {
+    "id": 134,
+    "question": "What is the best way to deal with a customer who keeps interrupting?",
+    "options": [
+      "Politely ask to finish your explanation before responding.",
+      "Interrupt them back to assert control.",
+      "Ignore the interruptions.",
+      "End the call immediately."
+    ],
+    "answer": "Politely ask to finish your explanation before responding."
+  },
+  {
+    "id": 135,
+    "question": "If a customer is unhappy with the wait time, how do you respond?",
+    "options": [
+      "Apologize and explain the reason while offering help as quickly as possible.",
+      "Tell them to be patient.",
+      "Ignore their complaint.",
+      "Hang up the call."
+    ],
+    "answer": "Apologize and explain the reason while offering help as quickly as possible."
+  },
+  {
+    "id": 136,
+    "question": "What should you do if a customer is struggling to understand technical jargon?",
+    "options": [
+      "Use simple language and examples to clarify.",
+      "Repeat the jargon more loudly.",
+      "Tell them to research on their own.",
+      "Ignore their confusion."
+    ],
+    "answer": "Use simple language and examples to clarify."
+  },
+  {
+    "id": 137,
+    "question": "How do you react when a customer gives positive feedback?",
+    "options": [
+      "Thank them and express appreciation for their time.",
+      "Ignore the feedback.",
+      "Tell them you were just doing your job.",
+      "Change the subject quickly."
+    ],
+    "answer": "Thank them and express appreciation for their time."
+  },
+  {
+    "id": 138,
+    "question": "A customer asks you to speed up a process that has a fixed timeline. What do you do?",
+    "options": [
+      "Explain the timeline clearly and offer status updates.",
+      "Promise a faster process without checking.",
+      "Ignore their request.",
+      "Tell them it's impossible and hang up."
+    ],
+    "answer": "Explain the timeline clearly and offer status updates."
+  },
+  {
+    "id": 139,
+    "question": "How would you manage multiple customers with similar issues at the same time?",
+    "options": [
+      "Address common issues with a standard solution and communicate clearly.",
+      "Handle one customer fully before acknowledging others.",
+      "Ignore the less vocal customers.",
+      "Pass the issues to another team."
+    ],
+    "answer": "Address common issues with a standard solution and communicate clearly."
+  },
+  {
+    "id": 140,
+    "question": "What is the most important quality for a customer service agent?",
+    "options": [
+      "Patience and empathy.",
+      "Speed over accuracy.",
+      "Authority and strictness.",
+      "Avoiding customer interaction."
+    ],
+    "answer": "Patience and empathy."
+  },
+  {
+    "id": 141,
+    "question": "When a customer is confused about product features, what should you do?",
+    "options": [
+      "Provide clear explanations and offer demos if possible.",
+      "Tell them to read the manual.",
+      "Ignore their confusion.",
+      "Refer them to another department."
+    ],
+    "answer": "Provide clear explanations and offer demos if possible."
+  },
+  {
+    "id": 142,
+    "question": "If a customer calls repeatedly about the same issue, how should you handle it?",
+    "options": [
+      "Be patient and try to resolve the root cause.",
+      "Tell them to stop calling.",
+      "Ignore the calls after the first one.",
+      "Refer them to voicemail."
+    ],
+    "answer": "Be patient and try to resolve the root cause."
+  },
+  {
+    "id": 143,
+    "question": "What do you do if you accidentally disclose confidential information?",
+    "options": [
+      "Report the incident immediately and follow company procedures.",
+      "Ignore it and hope no one noticed.",
+      "Blame the customer for confusion.",
+      "Try to delete the information yourself."
+    ],
+    "answer": "Report the incident immediately and follow company procedures."
+  },
+  {
+    "id": 144,
+    "question": "How do you handle a customer who refuses to provide necessary information?",
+    "options": [
+      "Explain why the information is needed and how it helps.",
+      "Force them to give information.",
+      "Ignore the lack of info and proceed.",
+      "End the interaction."
+    ],
+    "answer": "Explain why the information is needed and how it helps."
+  },
+  {
+    "id": 145,
+    "question": "What is your approach to continuous improvement in customer service?",
+    "options": [
+      "Seek feedback and update skills regularly.",
+      "Do the minimum required.",
+      "Ignore feedback and continue as usual.",
+      "Blame others for problems."
+    ],
+    "answer": "Seek feedback and update skills regularly."
+  },
+  {
+    "id": 146,
+    "question": "How do you respond to a customer who is angry about company policy?",
+    "options": [
+      "Listen, empathize, and explain the reasons politely.",
+      "Tell them to follow the rules.",
+      "Ignore their anger.",
+      "Argue back."
+    ],
+    "answer": "Listen, empathize, and explain the reasons politely."
+  },
+  {
+    "id": 147,
+    "question": "If you realize a customer’s issue requires more time than usual, what do you do?",
+    "options": [
+      "Inform the customer about the expected timeline and keep them updated.",
+      "Rush to finish quickly.",
+      "Ignore and close the case early.",
+      "Avoid contacting the customer."
+    ],
+    "answer": "Inform the customer about the expected timeline and keep them updated."
+  },
+  {
+    "id": 148,
+    "question": "How do you maintain professionalism when dealing with difficult customers?",
+    "options": [
+      "Stay calm, use polite language, and focus on solutions.",
+      "Match their tone to show understanding.",
+      "Ignore professionalism to vent frustration.",
+      "Hang up when they get rude."
+    ],
+    "answer": "Stay calm, use polite language, and focus on solutions."
+  },
+  {
+    "id": 149,
+    "question": "A customer says they found a bug in your software. What should you do?",
+    "options": [
+      "Thank them and escalate the issue to the development team.",
+      "Ignore the report.",
+      "Tell them it’s not a bug.",
+      "Ask them to fix it themselves."
+    ],
+    "answer": "Thank them and escalate the issue to the development team."
+  },
+  {
+    "id": 150,
+    "question": "What would you do if a customer asks you for help outside of your area of expertise?",
+    "options": [
+      "Politely inform them and direct to the right resource or person.",
+      "Pretend you know and provide advice.",
+      "Ignore their question.",
+      "Tell them to figure it out on their own."
+    ],
+    "answer": "Politely inform them and direct to the right resource or person."
+  }
+]
