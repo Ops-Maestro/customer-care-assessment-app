@@ -20,10 +20,9 @@ app.use(cors({
 
 app.use(express.json());
 
-// ✅ Health Check Routes for Render deployment success
-app.get('/', (req, res) => {
-  res.status(200).send('Server is running');
-});
+// ✅ Health checks for Render
+app.get('/', (req, res) => res.status(200).send('Server is running'));
+app.get('/health', (req, res) => res.status(200).send('OK'));
 
 app.get('/health', (req, res) => {
   res.status(200).send('OK');
