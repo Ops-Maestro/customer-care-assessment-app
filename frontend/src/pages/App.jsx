@@ -315,7 +315,7 @@ export default function App() {
           >
             <div>
               <h2 style={{ margin: 0, fontWeight: '800', fontSize: '20px' }}>
-                SYSTEM ASSESSMENT
+                CANDIDATE SYSTEM ASSESSMENT
               </h2>
               <div 
                 style={{ 
