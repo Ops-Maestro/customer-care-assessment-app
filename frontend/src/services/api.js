@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// Ensure we have a fallback for the API URL during development
-const baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+// ✅ UPDATE: Point this to your ACTUAL Render Backend URL
+const baseUrl = 'https://customer-care-assessment-app.onrender.com';
 
 // Create axios instance
 const api = axios.create({
@@ -14,7 +14,8 @@ const api = axios.create({
  */
 api.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem('authToken');
+    // ✅ UPDATE: Changed to 'token' to match your login logic
+    const token = localStorage.getItem('token');
     
     if (token) {
       config.headers['Authorization'] = `Bearer ${token}`;
