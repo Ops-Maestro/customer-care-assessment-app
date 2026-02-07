@@ -14,7 +14,7 @@ const app = express();
 
 // ✅ Allowed your specific Static Site Frontend to communicate with this backend
 app.use(cors({
-  origin: 'https://customer-care-assessment-app-1.onrender.com', 
+  origin: 'https://customer-care-assessment-app-1.onrender.com',
   credentials: true
 }));
 
