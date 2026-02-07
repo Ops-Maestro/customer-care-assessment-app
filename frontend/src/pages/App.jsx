@@ -247,7 +247,7 @@ export default function App() {
                 {results.score}%
               </div>
               <p style={{ color: '#64748b', fontSize: '14px', fontWeight: '600' }}>
-                A detailed breakdown of your results has been sent to your email.
+                A detailed breakdown of your results will be sent to your email.
               </p>
             </div>
           )}
@@ -260,7 +260,7 @@ export default function App() {
               marginBottom: '30px' 
             }}
           >
-            Thank you, {user?.name}. Your responses have been recorded.
+            Thank you, {user?.name}. Your responses have been successfully recorded.
           </p>
           <button 
             onClick={handleLogout} 
