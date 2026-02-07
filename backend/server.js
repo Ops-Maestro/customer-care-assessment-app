@@ -18,6 +18,15 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// ✅ FIX 2: Health Check Routes for Render
+app.get('/', (req, res) => {
+  res.status(200).send('Server is running');
+});
+
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
 // MongoDB Connection
 const connectDB = async () => {
   try {
