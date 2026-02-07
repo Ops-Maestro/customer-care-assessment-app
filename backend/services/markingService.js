@@ -84,8 +84,11 @@ const processLocalSubmission = async (userEmail, userName, submittedAnswers) => 
       `
     };
 
-    // Send the email
-    await transporter.sendMail(mailOptions);
+    // ✅ FIX: Send the email WITHOUT 'await' so the function can return the score immediately.
+    // This prevents the connection timeout from blocking the database save.
+    transporter.sendMail(mailOptions).catch(err => {
+        console.error("Background Email Error (User still submitted):", err.message);
+    });
     
     // Return the summary object to the server.js for database storage and frontend response
     return summary;
