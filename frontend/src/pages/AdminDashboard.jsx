@@ -103,6 +103,24 @@ export default function AdminDashboard() {
     });
   };
 
+  // ✅ NEW: Helper to calculate duration till current period
+  const calculateTimeAgo = (dateString) => {
+    if (!dateString) return "";
+    const seconds = Math.floor((new Date() - new Date(dateString)) / 1000);
+    
+    let interval = Math.floor(seconds / 31536000);
+    if (interval >= 1) return interval + (interval === 1 ? " year ago" : " years ago");
+    interval = Math.floor(seconds / 2592000);
+    if (interval >= 1) return interval + (interval === 1 ? " month ago" : " months ago");
+    interval = Math.floor(seconds / 86400);
+    if (interval >= 1) return interval + (interval === 1 ? " day ago" : " days ago");
+    interval = Math.floor(seconds / 3600);
+    if (interval >= 1) return interval + (interval === 1 ? " hour ago" : " hours ago");
+    interval = Math.floor(seconds / 60);
+    if (interval >= 1) return interval + (interval === 1 ? " minute ago" : " minutes ago");
+    return Math.floor(seconds) + " seconds ago";
+  };
+
   return (
     <div style={{ minHeight: '100vh', backgroundColor: colors.background, padding: '30px', fontFamily: "'Poppins', sans-serif" }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -138,6 +156,7 @@ export default function AdminDashboard() {
                 <th style={styles.th}>ADMIN IDENTITY</th>
                 <th style={styles.th}>ACCESS STATUS</th>
                 <th style={styles.th}>LOGIN TIMESTAMP</th>
+                <th style={styles.th}>SESSION DURATION</th>
                 <th style={styles.th}>ACTIONS</th>
               </tr>
             </thead>
@@ -154,6 +173,12 @@ export default function AdminDashboard() {
                     <span style={{ ...styles.statusBadge, background: '#ecfdf5', color: '#059669' }}>Authorized Access</span>
                   </td>
                   <td style={styles.td}>{formatFullDate(log.timestamp)}</td>
+                  {/* ✅ Added Duration Column */}
+                  <td style={styles.td}>
+                    <div style={{ fontSize: '14px', fontWeight: '700', color: colors.primary }}>
+                      {calculateTimeAgo(log.timestamp)}
+                    </div>
+                  </td>
                   <td style={styles.td}>
                     <button onClick={() => deleteAdminLog(log._id || index)} style={styles.delBtn}>DELETE LOG</button>
                   </td>
