@@ -75,6 +75,8 @@ frontend/
 ```text
 backend/
 ├── server.js (Main server file)
+├── services/
+|   └── markingService.js (The automatic marking logic)
 ├── migrate-questions.js (Migration Script)
 ├── package.json
 ├── .env.example (Environment variables template)
