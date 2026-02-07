@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// ✅ UPDATE: Point this to your ACTUAL Render Backend URL
-const baseUrl = 'https://customer-care-assessment-app.onrender.com';
+// Ensure we have a fallback for the API URL during development
+const baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 // Create axios instance
 const api = axios.create({
@@ -14,8 +14,7 @@ const api = axios.create({
  */
 api.interceptors.request.use(
   (config) => {
-    // ✅ UPDATE: Changed to 'token' to match your login logic
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem('authToken');
     
     if (token) {
       config.headers['Authorization'] = `Bearer ${token}`;
@@ -37,18 +36,21 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     const status = error.response?.status;
-    const currentPath = window.location.pathname;
 
-    // ✅ FULL CHANGE: Added a check to ensure we don't redirect if we are already attempting to login
-    // This prevents the "Initializing assessment" loop.
-    if ((status === 401 || status === 403) && !currentPath.includes('/login') && !currentPath.includes('/admin')) {
+    if (status === 401 || status === 403) {
       console.warn('Session expired or unauthorized. Purging local security credentials...');
       
       // ✅ Completely clear all stored admin and user details
       localStorage.clear(); 
       
-      // If the user was on the dashboard or test page, send them back to login
-      window.location.href = currentPath.includes('admin') ? '/admin' : '/login';
+      // Prevent infinite redirect loops by checking current path
+      const currentPath = window.location.pathname;
+      const isAuthPage = currentPath.includes('/login') || currentPath.includes('/admin');
+
+      if (!isAuthPage) {
+        // If the user was on the dashboard or test page, send them back to login
+        window.location.href = currentPath.includes('admin') ? '/admin' : '/login';
+      }
     }
     return Promise.reject(error);
   }
