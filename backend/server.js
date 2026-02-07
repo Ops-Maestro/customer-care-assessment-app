@@ -12,13 +12,15 @@ const { processLocalSubmission } = require('./services/markingService');
 
 const app = express();
 
+// ✅ Allowed your specific Static Site Frontend to communicate with this backend
 app.use(cors({
   origin: 'https://customer-care-assessment-app-1.onrender.com', 
   credentials: true
 }));
+
 app.use(express.json());
 
-// ✅ FIX 2: Health Check Routes for Render
+// ✅ Health Check Routes for Render deployment success
 app.get('/', (req, res) => {
   res.status(200).send('Server is running');
 });
@@ -49,9 +51,9 @@ const userResponseSchema = new mongoose.Schema({
     timestamp: { type: Date, default: Date.now }
   }],
   overallScore: Number,
-  correctCount: { type: Number, default: 0 }, // ✅ Added for marking logic
-  wrongCount: { type: Number, default: 0 },    // ✅ Added for marking logic
-  skippedCount: { type: Number, default: 0 }, // ✅ Added for marking logic
+  correctCount: { type: Number, default: 0 }, 
+  wrongCount: { type: Number, default: 0 },    
+  skippedCount: { type: Number, default: 0 }, 
   completed: { type: Boolean, default: false },
   assessmentDate: { type: Date, default: Date.now }
 });
@@ -71,7 +73,6 @@ const userSchema = new mongoose.Schema({
   email: { type: String, unique: true },
   lastLogin: { type: Date, default: Date.now },
   role: { type: String, default: 'user' },
-  // ✅ Fields to sync metrics for Admin Dashboard
   overallScore: { type: Number, default: 0 },
   correctCount: { type: Number, default: 0 },
   wrongCount: { type: Number, default: 0 },
@@ -86,7 +87,6 @@ const adminSchema = new mongoose.Schema({
   role: { type: String, default: 'admin' }
 });
 
-// ✅ Admin Log Schema to store audit trail
 const adminLogSchema = new mongoose.Schema({
   email: String,
   timestamp: { type: Date, default: Date.now },
@@ -164,7 +164,7 @@ const initializeQuestions = async () => {
   } catch (error) {}
 };
 
-// ✅ Admin Login - Records Audit Log
+// Admin Login
 app.post('/api/admin/login', async (req, res) => {
   const { email, password } = req.body;
   try {
@@ -174,7 +174,6 @@ app.post('/api/admin/login', async (req, res) => {
     const isValid = await bcrypt.compare(password, admin.password);
     if (!isValid) return res.status(401).json({ error: 'Invalid credentials' });
 
-    // ✅ RECORD THE AUDIT LOG
     const newLog = new AdminLog({ email: admin.email });
     await newLog.save();
 
@@ -194,7 +193,7 @@ app.post('/api/admin/login', async (req, res) => {
   }
 });
 
-// ✅ Admin Audit Logs Endpoint
+// Admin Audit Logs Endpoint
 app.get('/api/admin/admin-logs', authenticateToken, requireAdmin, async (req, res) => {
   try {
     const logs = await AdminLog.find().sort({ timestamp: -1 });
@@ -204,7 +203,7 @@ app.get('/api/admin/admin-logs', authenticateToken, requireAdmin, async (req, re
   }
 });
 
-// ✅ Delete Admin Log Record
+// Delete Admin Log Record
 app.delete('/api/admin/admin-logs/:id', authenticateToken, requireAdmin, async (req, res) => {
   try {
     await AdminLog.findByIdAndDelete(req.params.id);
@@ -229,13 +228,11 @@ app.post('/api/login', async (req, res) => {
       await newUser.save();
     }
 
-    // Initialize progress if doesn't exist
     const existingProgress = await UserProgress.findOne({ email });
     if (!existingProgress) {
       await UserProgress.create({ email, currentQuestionIndex: 0, timeRemaining: 1800, answers: {} });
     }
 
-    // ✅ Ensure name is passed into the JWT for use in /submit
     const token = jwt.sign({ email, name, role: 'user' }, process.env.JWT_SECRET, { expiresIn: '8h' });
     res.json({ message: 'Login recorded', token });
   } catch (error) {
@@ -275,17 +272,15 @@ app.get('/api/questions', authenticateToken, async (req, res) => {
   } catch (error) { res.status(500).json({ error: 'Fetch failed' }); }
 });
 
-// ✅ Updated Submit Route
+// Submit Route
 app.post('/api/submit', authenticateToken, async (req, res) => {
   const { answers } = req.body;
   try {
     const userEmail = req.user.email;
     const userName = req.user.name || "Candidate";
 
-    // 1. Process marking and send email via service
     const summary = await processLocalSubmission(userEmail, userName, answers);
 
-    // 2. Save detailed response record
     const submission = new UserResponse({
       applicantName: userName,
       email: userEmail,
@@ -298,7 +293,6 @@ app.post('/api/submit', authenticateToken, async (req, res) => {
     });
     await submission.save();
 
-    // 3. Sync findings back to User model (Required for Admin Dashboard view)
     await User.findOneAndUpdate(
       { email: userEmail },
       { 
@@ -311,7 +305,6 @@ app.post('/api/submit', authenticateToken, async (req, res) => {
       }
     );
     
-    // 4. Cleanup progress
     await UserProgress.deleteOne({ email: userEmail });
     
     res.json({ 
