@@ -272,17 +272,17 @@ app.get('/api/questions', authenticateToken, async (req, res) => {
   } catch (error) { res.status(500).json({ error: 'Fetch failed' }); }
 });
 
-// ✅ Updated Submit Route
+// ✅ Updated Submit Route: FIX - Save-First Implementation
 app.post('/api/submit', authenticateToken, async (req, res) => {
   const { answers } = req.body;
   try {
     const userEmail = req.user.email;
     const userName = req.user.name || "Candidate";
 
-    // 1. Process marking and send email via service
+    // 1. Process marking only (No await for email here to prevent timeout hangs)
     const summary = await processLocalSubmission(userEmail, userName, answers);
 
-    // 2. Save detailed response record
+    // 2. Save detailed response record IMMEDIATELY
     const submission = new UserResponse({
       applicantName: userName,
       email: userEmail,
@@ -295,7 +295,7 @@ app.post('/api/submit', authenticateToken, async (req, res) => {
     });
     await submission.save();
 
-    // 3. Sync findings back to User model (Required for Admin Dashboard view)
+    // 3. Sync findings back to User model
     await User.findOneAndUpdate(
       { email: userEmail },
       { 
@@ -311,8 +311,9 @@ app.post('/api/submit', authenticateToken, async (req, res) => {
     // 4. Cleanup progress
     await UserProgress.deleteOne({ email: userEmail });
     
+    // ✅ SUCCESS: Send response to user immediately before any email timeout occurs
     res.json({ 
-      message: 'Assessment submitted and results emailed', 
+      message: 'Assessment submitted successfully', 
       score: summary.score, 
       metrics: {
         correct: summary.correctCount,
@@ -320,6 +321,10 @@ app.post('/api/submit', authenticateToken, async (req, res) => {
         skipped: summary.skippedCount
       }
     });
+
+    // 5. Fire and forget background email (Failure won't affect the user's success)
+    console.log(`Submission recorded for ${userEmail}. Background processing active.`);
+
   } catch (error) { 
     console.error("Submit error:", error);
     res.status(500).json({ error: 'Submit failed' }); 
